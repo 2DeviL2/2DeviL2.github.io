@@ -1,0 +1,32 @@
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cream;
+    font-size: xx-large;
+    border-radius: 25px;
+    -webkit-user-select: none;
+}
+.answer, .question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    transition: all 0.5s
+  }
+  
+  .answer:hover{
+    transition: 0.5s;
+    background-color: blanchedalmond;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.hide {
+  opacity: 0;
+}

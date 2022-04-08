@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css\main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Практика 1</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="hb1">
+                    <p>Основная информация</p>
+                </li>
+                <li id="hb2">
+                    <p>Примеры кода</p>
+                </li>
+                <li id="hb3">
+                    <p>Тест</p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="place-for-users-name" id="name"></div>
+    <div class="win">
+        <div class="menu">
+
+            <div class='task-for-users'>
+                <div>
+                    Первый код позволит нам посчитать площадь треугольника.
+                    <br>
+                    Нажмите на кнопку чтобы приступить.
+                </div>
+                <div class='button' id="btn1">Кнопка</div>
+                <div class="example-code" id="exmp1">
+                    Исходник: <br>
+                    let numbers = prompt("Введите через пробел основание и высоту треугольника").split(' '); <br>
+                    alert(numbers[0]*numbers[1]/2);
+                </div>
+            </div>
+
+            <div class="task-for-users">
+                <div>
+                    Второй код позволит сравнить длины 2 строк.
+                    <br>
+                    Нажмите на кнопку чтобы приступить.
+                </div>
+                <div class='button' id="btn2">Сравнить!</div>
+                <div class="example-code" id="exmp2">
+                    Исходник: <br>
+                    alert(prompt("Введите первую строку").length == prompt("Введите вторую строку").length);
+                </div>
+            </div>
+
+            <div class="task-for-users">
+                <div>
+                    Третий код позволит определить минимальное и максимальное числа из массива целых чисел.
+                    <br>
+                    Нажмите на кнопку чтобы приступить.
+                </div>
+                <div class='button' id="btn3">Найти</div>
+                <div class="example-code" id="exmp3">
+                    Исходник: <br>
+                    let nums = prompt("Введите через пробел массив чисел").split(' ').sort(function(a, b) { <br>
+                    return a - b; <br>
+                    }); <br>
+                    alert(nums[0]); <br>
+                    alert(nums[nums.length-1]);
+                </div>
+            </div>
+
+            <div class="task-for-users">
+                <div>
+                    Четвёртый код представляет из себя таймер.
+                    <br>                   
+                </div>
+                <div class='button' id="btn4">Запуск</div>
+                <div class="example-code" id="exmp4">
+                    Исходник: <br>
+                    let d1 = new Date(); <br>
+                    alert('Время пошло, чтобы закончить замер нажмите ОК'); <br>
+                    let d2 = new Date(); <br>
+                    alert('Прошло ' + ((d2-d1)/100) + ' секунд'); <br>
+                </div>
+            </div>
+            <div class="control">
+                <div id="back" class="controler-button"> Назад </div>
+                <div id="next" class="controler-button"> Вперед </div>
+            </div>
+
+        </div>
+    </div>
+    <div class='inner-body'>
+        <div class='text-about-something'>
+            <img src="img/JavaScript.jpg" alt="undefine" id="img" style="display: flex;">
+            <br>JavaScript – один из самых популярных языков программирования в мире. Он используется для создания интерактивных веб-страниц, мобильных приложений, в серверной разработке. Поддерживает объектно-ориентированный, императивный и функциональный стили. Является реализацией спецификации ECMAScript (стандарт ECMA-262).</br>
+
+            <br>JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.
+
+			Вот примеры задач, которые решает JS:</br>
+			 <br><ul>
+				 <li><b>Взаимодействие с пользователем.</b> Всплывающие окна с полем для ввода почты или других данных, уведомления об использовании cookie.</li>
+				 <li><b>Обработка данных HTML.</b> JS помогает заполнить необходимые поля в формах, проверять буквенные и числовые значения, а также управлять HTML-элементами на странице.</li>
+				 <li><b>Математические вычисления.</b> С помощью JS-скриптов на сайтах реализованы калькуляторы, например подсчет суммы заказа в корзине интернет-магазина.</li>
+		    </ul></br>
+         
+        </div>
+
+        <iframe class="test" style="height: 400px; width : 100%" src="test.html"></iframe>
+
+    </div>
+    <footer>
+		<div class="overlay" onclick="closeOver()">
+			<div class="content">
+				<h1><font color="white">Привет, <span class="curName">тот кто не назван</span></font>></h1>
+				<h2><font color="white">Сегодня: <span class="curDate"></span></font>></h2>
+			</div>
+		</div>
+			<button class="button" onclick="openOver()">Кнопка</button>
+	</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
