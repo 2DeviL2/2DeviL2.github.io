@@ -50,7 +50,7 @@ document.querySelector('#btn4').addEventListener('click', ()=> {
    let d1 = new Date();
    alert('Время пошло, чтобы закончить замер нажмите ОК');
    let d2 = new Date();
-   alert('Прошло ' + ((d2-d1)/100) + ' секунд');
+   alert('Прошло ' + ((d2-d1)/1000) + ' секунд');
    document.querySelector('#exmp4').style.display = 'inherit';
    hideAnimation(function(){}, document.querySelector('#exmp4')); 
 })
